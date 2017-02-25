@@ -1,37 +1,37 @@
-# SSII 2016 チュートリアル
-## Pythonによる機械学習
+# SSII 2016 Tutorial
+Machine learning with ## # Python
 
-SSII 2016において，[Pythonによる機械学習](https://confit.atlas.jp/guide/event/ssii2016/static/tutorial#TS22)というチュートリアル講演をします．
-講演スライドは後日公開予定です．
+At SSII 2016, I will give a tutorial lecture titled "Machine learning with Python" (https://confit.atlas.jp/guide/event/ssii2016/static/tutorial#TS22).
+The lecture slide will be released at a later date.
 
-ここでは説明に使ったサンプルコードを置いています．
+Here we have the sample code we used for the explanation.
 
-## 使い方
+## How to use
 
-* まず， prepare_dataset.py を実行して，データセットを用意してください．
-* 次に，svm.py や randomforest.py，cnn_gpu.py などを実行すると，学習の後に識別スコア等が表示されます．
+* First, prepare_dataset.py should be executed to prepare the data set.
+* Next, if you execute svm.py, randomforest.py, cnn_gpu.py etc., the identification score etc will be displayed after learning.
 
-```bash
- python prepare_dataset.py
- python svm.py
- python cnn_gpu.py
-```
+`` `Bash
+ Python prepare_dataset.py
+ Python svm.py
+ Python cnn_gpu.py
+`` `
 
 
-## 必要環境
+## Required environment
 
 * Python 2.7
-	* chainer がインストールしてあること
-* nn_gpu.pyやcnn_gpu.py を実行する場合，CUDAをインストールした後にchainerをインストール
-	* ただし，CUDAに対応したGPUが必要です
+	* That chainer is installed
+* When executing nn_gpu.py or cnn_gpu.py, install chainer after installing CUDA
+	* However, GPU that corresponds to CUDA is necessary
 
-### CUDA インストール
+### CUDA installation
 
-[こちら](https://developer.nvidia.com/cuda-downloads)から自分の環境に合うものをダウンロードしてインストールしてください
+Please download and install from the [here] (https://developer.nvidia.com/cuda-downloads) what suits your environment
 
-### chainer インストール
-* 以下のコマンドを実行
+### Installing chainer
+* Execute the following command
 
-```bash
-pip install chainer
-```
+`` `Bash
+Pip install chainer
+`` `
